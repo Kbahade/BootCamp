@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+        header{
+            display: flex;
+            border: 2px solid black;
+            background-color: aqua;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: -1px;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+       
+        #box2{
+            border: 3px solid yellowgreen;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            background-color:rgb(123, 133, 231);
+        }
+        #box1,#box3,#box4,#box7{
+            border: 3px solid yellowgreen;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            background-color: aquamarine;
+        }
+        #box5{
+            border: 3px solid yellowgreen;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(123, 133, 231);
+            position: relative;
+            right: 60px;
+            bottom: 15px;
+        }
+        #box6,#box9{
+            border: 3px solid yellowgreen;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            background-color: aquamarine;
+            position: relative;
+            bottom: 90px;
+        }
+        #box8{
+            border: 3px solid yellowgreen;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(123, 133, 231);
+            position: relative;
+            left: 60px;
+            bottom: 15px;
+        }
+        
+        .firstBox{
+            background-color: cornsilk;
+            text-align: center;
+            margin-top: -15px;
+        }
+        .first{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 380px;
+            width: 100%;
+            
+        }
+        .bigBox1,.bigBox2,.bigBox3{
+            display: flex;
+            border: 2px solid darkblue;
+            flex-direction: column;
+            align-items: center;
+            background-color: burlywood;
+            height: 220px;
+            width: 220px;
+        }
+        
+        .secondBox{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 200px;
+            width: 100%;
+        }
+        .bigBox4,.bigBox5,.bigBox6{
+            display: flex;
+            border: 2px solid darkblue;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 220px;
+            width: 220px;
+        }
+        
+        #box11{
+            border: 3px solid yellowgreen;
+            margin: 10px;
+            background-color: plum;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            
+        }
+        #box12{
+            border: 3px solid yellowgreen;
+            background-color: purple;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            
+        }
+        #box13,#box14,#box16,#box17{
+            border: 3px solid yellowgreen;
+            background-color: plum;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            
+        }
+    
+        #box15{
+            border: 3px solid yellowgreen;
+            background-color: purple;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            left: 30px;
+            top: 40px;
+        }
+        #box18{
+            border: 3px solid yellowgreen;
+            background-color: purple;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            right: 50px;
+            bottom: 10px;
+            
+        }
+        #box19{
+            border: 3px solid yellowgreen;
+            background-color: plum;
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            bottom: 82px;
+            
+        }
+        .lorem{
+            overflow: auto;
+            border: 3px solid black;
+            
+            height: 270px;
+            width: 230px;
+            position: relative;
+            /* bottom: 120px; */
+        }
+        .scroll{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 380px;
+        }
+        #box20{
+            border: 3px solid yellowgreen;
+            background-color: blueviolet;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            position: sticky;
+            bottom: 160px;
+            left: 80px;
+            
+        }
+        .sapna{
+            display: flex;
+            border: 2px solid darkblue;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 220px;
+            width: 220px;
+
+        }
+        #box21,#box22,#box23,#box24{
+            background-color: rgb(95, 221, 215);
+            border: 3px solid rgb(41, 56, 190);
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            
+        }
+        
+        .thirdBox{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        .boxLining{
+            display: flex;
+            width: 50%;
+            margin: auto;
+        }
+        .boxLining1{
+            display: flex;
+            position: relative;
+            bottom: 10px;
+            width: 50%;
+            margin: auto;
+        }
+        .box{
+            background-color: rgb(95, 221, 215);
+            border: 3px solid rgb(41, 56, 190);
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+        }
+        .twoBox{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin: auto;
+            border-bottom:2px solid rgb(1, 11, 26);
+        }
+        .boxa,.boxb{
+            background-color: rgb(95, 221, 215);
+            border: 3px solid rgb(41, 56, 190);
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            
+        }
+        .boxes{
+            text-align: center;
+            background-color: rgb(169, 169, 236);
+            width: 100%;
+            margin: auto;
+        }
+        .boxLining2{
+            display: flex;
+            position: relative;
+            /* bottom: 10px; */
+            width: 50%;
+            margin: auto;
+            border-bottom: 2px solid rgb(4, 4, 39);
+        }
+        .box55{
+            align-items: stretch;
+            flex-grow: 2;
+            background-color: rgb(95, 221, 215);
+            border: 3px solid rgb(41, 56, 190);
+            margin: 10px;
+            border-radius: 10%;
+            height: 50px;
+            width: 50px;
+            
+        }
+        .boxLining3{
+            display: flex;
+            position: relative;
+            /* bottom: 10px; */
+            width: 50%;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .boxLining4{
+            display: flex;
+            position: relative;
+            bottom: 10px;
+            width: 50%;
+            margin: auto;
+            justify-content: space-around;
+        }
+        footer{
+            background-color: blueviolet;
+            height: 50px;
+            text-align: center;
+            
+        }
+        i{
+            display: flex;
+            height: 80px;
+            width: 40px;
+            margin: 10px;
+            font-size: 30px;
+        }
+        .arrow{
+            background-color: darkturquoise;
+            border: 7px solid black;
+            position: relative;
+            bottom: 90px;
+            /* float: right; */
+            border-radius: 5px 40px 40px 5px ;
+            height: 40px;
+            width: 40px;
+            position: fixed;
+        }
+        
+        .icon:hover,#nav2:hover,#homeid:hover,#about:hover,#skill:hover{
+            color: darkorange;
+        }
+        #button1:hover,#button2:hover{
+            background-color: rgb(71, 71, 168);
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div>
+            <p id="nav2">FLOAT,POSITION & FLEX</p>
+        </div>
+        <div class="home2">
+            <a id="homeid" href="#">Home</a> 
+            <a id="about" href="#a">About</a>
+            <a id="skill" href="#b">Skills</a>
+        </div>
+        <div>
+            <button id="button1" type="button">Signup</button>
+            <button id="button2" type="button">Login</button>
+        </div>
+    
+    </nav>
+    </header>
+    
+
+    <div class="firstBox">
+        <p>POSITIONING ELEMENTS USING FLOATS</p>
+        <div class="first">
+        <div class="bigBox1">
+            <div id="box1"><h5>Section1</h5></div>
+            <div id="box2"><h5>Section2</h5></div>
+            <div id="box3"><h5>Section1</h5></div>
+        </div>
+        <div class="bigBox2">
+            <div id="box4"><h5>Section1</h5></div>
+            <div id="box5"><h5>Section2</h5></div>
+            <div id="box6"><h5>Section1</h5></div>
+        </div>
+        <div class="bigBox3">
+            <div id="box7"><h5>Section1</h5></div>
+            <div id="box8"><h5>Section2</h5></div>
+            <div id="box9"><h5>Section1</h5></div>
+        </div>
+    </div>
+    </div>
+
+    <center><p>UNIQUELY POSITIONING CONTENT</p></center>
+    <div class="secondBox">
+        <div class="bigBox4">
+            <div id="box11"><h5>Section1</h5></div>
+            <div id="box12"><h5>Section2</h5></div>
+            <div id="box13"><h5>Section1</h5></div>
+        </div>
+        <div class="bigBox5">
+            <div id="box14"><h5>Section1</h5></div>
+            <div id="box15"><h5>Section2</h5></div>
+            <div id="box16"><h5>Section1</h5></div>
+        </div>
+        <div class="bigBox6">
+            <div id="box17"><h5>Section1</h5></div>
+            <div id="box18"><h5>Section2</h5></div>
+            <div id="box19"><h5>Section1</h5></div>
+        </div>
+    </div>
+    <div class="scroll">
+        <div class="lorem">    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo voluptatum neque pariatur? In ex, porro dignissimos dolorem neque ullam? Ea ipsa consectetur quisquam molestiae, libero, corrupti pariatur impedit reprehenderit, alias nobis quis doloribus labore soluta consequatur iusto. Animi itaque ut beatae! Nesciunt repudiandae, maiores accusamus eius obcaecati iusto debitis repellendus, blanditiis esse id voluptas! Dolore dicta sequi neque veritatis cum porro ab molestiae vero enim repudiandae qui sunt explicabo reprehenderit corrupti illo voluptatum a voluptates deserunt, cumque quos tempora? Debitis enim, voluptatem pariatur quidem, facilis illum maiores incidunt repellendus laudantium quia corporis laboriosam itaque vitae nam deserunt magni quo cum quam aperiam blanditiis possimus eligendi odio totam laborum? Nihil quod maxime tempore, veritatis, vel minima reprehenderit sint atque, facere quibusdam soluta fuga obcaecati odio. Quisquam ipsa laboriosam saepe delectus tempore iure minima nemo aspernatur numquam voluptates corporis repellendus, cumque illum debitis vel officia neque sequi, quo doloribus ullam. Dolorum illo sit pariatur debitis doloribus adipisci perferendis maxime error consectetur dolor inventore sint ut ea nesciunt, distinctio dolore delectus! Quidem voluptatem enim, delectus ratione perferendis ex doloribus earum culpa nostrum minima aspernatur omnis aut sint. Tenetur, quasi atque nam modi fugit laborum dignissimos error doloribus earum. Ipsa a deserunt esse.]</p>
+                <div id="box20"><h5>Section2</h5></div>
+            </div>
+    </div>
+    <div class="boxes">
+        <p>POSITIONING WITH FLEX</p>
+    <div class="thirdBox">
+        <div class="boxLine">
+            <div id="box21"><h5>item1</h5></div>
+            <div id="box22"><h5>item2</h5></div>
+            <div id="box23"><h5>item3</h5></div>
+            <div id="box24"><h5>item4</h5></div>
+        </div>
+    </div>
+    <hr width="50%" color="">
+    <div class="boxLining">
+        <div class="box"><h5>item1</h5></div>
+        <div class="box"><h5>item2</h5></div>
+        <div class="box"><h5>item3</h5></div>
+        <div class="box"><h5>item4</h5></div>
+        <div class="box"><h5>item5</h5></div>
+        <div class="box"><h5>item6</h5></div>
+        <div class="box"><h5>item7</h5></div>
+        <div class="box"><h5>item8</h5></div>
+        <div class="box"><h5>item9</h5></div>
+        <div class="box"><h5>item10</h5></div>
+    </div>
+    <div class="boxLining1">
+        <div class="box"><h5>item11</h5></div>
+        <div class="box"><h5>item12</h5></div>
+        <div class="box"><h5>item13</h5></div>
+        <div class="box"><h5>item14</h5></div>
+        <div class="box"><h5>item15</h5></div>
+        <div class="box"><h5>item16</h5></div>
+        <div class="box"><h5>item17</h5></div>
+        <div class="box"><h5>item18</h5></div>
+        <div class="box"><h5>item19</h5></div>
+        <div class="box"><h5>item20</h5></div>
+    </div>
+    <div class="twoBox">
+        <div class="boxa"><h5>item21</h5></div>
+        <div class="boxb"><h5>item22</h5></div>
+    </div>
+    
+    
+    <div class="boxLining2">
+        <div class="box"><h5>item1</h5></div>
+        <div class="box"><h5>item2</h5></div>
+        <div class="box55" class="box"><h5>item3</h5></div>
+        <div class="box"><h5>item4</h5></div>
+        <div class="box"><h5>item5</h5></div>
+    </div>
+    <div class="boxLining3">
+        <div class="box"><h5>item1</h5></div>
+        <div class="box"><h5>item2</h5></div>
+        <div class="box"><h5>item3</h5></div>
+        <div class="box"><h5>item4</h5></div>
+        <div class="box"><h5>item5</h5></div>
+    </div>
+    <div class="boxLining4">
+        <div class="box"><h5>item6</h5></div>
+    </div>
+</div>
+<footer>
+    <i class="fa-brands fa-instagram icon" ></i>
+    <i class="fa-brands fa-facebook icon"></i>
+    <i class="fa-brands fa-twitter icon"></i>
+    <i class="fa-brands fa-linkedin icon"></i>
+    <i class="fa-brands fa-youtube icon"></i>
+</footer>
+<a href="http://127.0.0.1:5500/BLOCKAssignment.html"><i class="fa-solid fa-arrow-up arrow"></i></a>
+</body>
+</html>
